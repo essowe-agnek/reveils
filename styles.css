@@ -1,0 +1,33 @@
+/* Styles personnalisés */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation pour les cartes */
+.bg-white {
+    transition: transform 0.3s ease;
+}
+
+.bg-white:hover {
+    transform: translateY(-5px);
+}
+
+/* Style pour les liens */
+a {
+    transition: color 0.3s ease;
+}
+
+/* Style pour le texte de la description */
+.text-gray-600 {
+    line-height: 1.6;
+}
+
+/* Style pour le footer */
+footer {
+    margin-top: auto;
+}
+
+/* Style pour le conteneur principal */
+main {
+    min-height: calc(100vh - 300px);
+} 
