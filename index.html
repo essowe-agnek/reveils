@@ -69,105 +69,120 @@ $(document).ready(function() {
             title: 'Les Réveils dans la Bible',
             description: 'Caractéristiques des formidables réveils aux temps bibliques suscités par des hommes de Dieu tels qu\'Esdras, Elie, David, Jonas, l\'apôtre Pierre',
             image: 'images/reveils-bibliques.png',
-            date: 'Biblique'
+            date: 'Biblique',
+            link: ''
         },
         {
             id: 'wesley',
             title: 'John Wesley',
             description: 'Le fondateur du méthodisme et l\'un des plus grands réformateurs du 18e siècle (1703-1791)',
             image: 'images/john-wesley.png',
-            date: '1703-1791'
+            date: '1703-1791',
+            link: 'john-wesley.html'
         },
         {
             id: 'luther',
             title: 'Martin Luther',
             description: 'Le grand réformateur qui ramena dans l\'Eglise l\'autorité et les vérités des Saintes Ecritures (1483-1546)',
             image: 'images/martin-luther.png',
-            date: '16e siècle'
+            date: '16e siècle',
+            link: ''
         },
         {
             id: 'reveilgalles',
             title: 'Le Réveil au Pays de Galles',
             description: 'Le réveil de 1904 déclenché par un humble mineur de 26 ans',
             image: 'images/reveil-galles.png',
-            date: '1904'
+            date: '1904',
+            link: ''
         },
         {
             id: 'azusastreet',
             title: 'Le Réveil d\'Azuza Street',
             description: 'Un précieux compte-rendu de l\'intense enfantement dans la prière précédant le réveil',
             image: 'images/reveil-azuza-street.png',
-            date: '1906'
+            date: '1906',
+            link: ''
         },
         {
             id: '6vagues',
             title: 'Les Six Vagues de Réveil',
             description: 'Un aperçu des six mouvements successifs de l\'Esprit depuis la Réforme jusqu\'au début du 20e siècle',
             image: 'images/reveil-6vagues.png',
-            date: 'Réforme - 20e siècle'
+            date: 'Réforme - 20e siècle',
+            link: ''
         },
         {
             id: 'feuduciel',
             title: 'Quand le Feu Descendit du Ciel',
             description: 'Un survol stimulant de quelques réveils historiques extrait du livre de George T.B. Davis',
             image: 'images/feu-du-ciel.png',
-            date: 'Historique'
+            date: 'Historique',
+            link: ''
         },
         {
             id: 'savonarole',
             title: 'Jérôme Savonarole',
             description: 'Précurseur de la Grande Réforme Protestante (1452-1498)',
             image: 'images/savonarole.png',
-            date: '15e siècle'
+            date: '15e siècle',
+            link: ''
         },
         {
             id: 'premierreveilusa',
             title: 'Le Premier Grand Réveil aux Etats-Unis',
             description: 'Un réveil aux résultats incroyables sous l\'impulsion de Jonathan Edwards et George Whitefield',
             image: 'images/premier-reveil-usa.png',
-            date: '1730-1740'
+            date: '1730-1740',
+            link: ''
         },
         {
             id: 'reveilmethodiste',
             title: 'Le Réveil Méthodiste',
             description: 'Le réveil envoyé du ciel qui bouleversa la face de l\'Angleterre',
             image: 'images/reveil-methodiste.png',
-            date: '18e siècle'
+            date: '18e siècle',
+            link: ''
         },
         {
             id: 'finney',
             title: 'Dieu descend à New York',
             description: 'Un compte-rendu de l\'oeuvre du Saint-Esprit qui survint en 1820 à Rome, dans les environs de New York',
             image: 'images/finney.png',
-            date: '1820'
+            date: '1820',
+            link: ''
         },
         {
             id: 'feu1857',
             title: 'Pourquoi le Feu Est-Il Tombé en 1857?',
             description: 'Un réveil qui survint en 1857 à New York en réponse à un mouvement de prière répandu dans toute la ville',
             image: 'images/feu-1857.png',
-            date: '1857'
+            date: '1857',
+            link: ''
         },
         {
             id: 'topeka',
             title: 'Le Réveil de Topéka et le Réveil Pentecôtiste',
             description: 'Le secret du développement exceptionnel des assemblées aux temps apostoliques redécouvert',
             image: 'images/topeka.png',
-            date: '1901-1905'
+            date: '1901-1905',
+            link: ''
         },
         {
             id: 'reveilcoreen',
             title: 'La Pentecôte Coréenne',
             description: 'Une merveilleuse oeuvre de Dieu qui prépara des milliers à l\'adversité et à la souffrance',
             image: 'images/reveil-coreen.png',
-            date: '1907-1910'
+            date: '1907-1910',
+            link: ''
         },
         {
             id: 'reveildrome',
             title: 'Le Réveil de la Drôme',
             description: 'L\'un des deux grands réveils français du XXe siècle',
             image: 'images/reveil-drome.png',
-            date: '1922-1939'
+            date: '1922-1939',
+            link: ''
         }
     ]
 
@@ -180,7 +195,7 @@ $(document).ready(function() {
                     <p class="text-gray-600 mb-4">${reveil.description}</p>
                     <div class="flex justify-between items-center">
                         <span class="text-sm text-blue-600">${reveil.date}</span>
-                        <span class="text-blue-600 hover:text-blue-800">Lire plus →</span>
+                        <a href="${reveil.link}" class="text-blue-600 hover:text-blue-800">Lire plus →</a>
                     </div>
                 </div>
             </div>
